@@ -22,6 +22,11 @@
                     <li class="menu-item"><a class="menu-link link" href="./portfolio.html">Portfolio</a></li>
                     <li class="menu-item"><a class="menu-link link" href="">Contacts</a></li>
                 </ul>
+                <button type="button" class="mobile-menu-open" data-menu-open>
+                    <svg class="mobile-menu-icon" width="32" height="22">
+                        <use href="./images/icons.svg#burger"></use>
+                    </svg>
+                </button>
             </nav>
             <address class="address">
                 <ul class="contact-address list">
@@ -30,17 +35,71 @@
                 </ul>
             </address>
         </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu-close-btn">
+                <button class="modal-close-btn" type="button" data-menu-close>
+                    <svg class="modal-close-btn-icon" width="8" height="8">
+                        <use href="./images/icons.svg#close-btn"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="container mobile-menu-nav">
+                <ul class="burger-menu list">
+                    <li class="burger-item"><a class="burger-link link" href="./index.html">Studio</a></li>
+                    <li class="burger-item"><a class="burger-link link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="burger-item"><a class="burger-link link" href="">Contacts</a></li>
+                </ul>
+                <div class="burger-flex-container">
+                    <address class="burger-address">
+                        <ul class="burger-contact-address list">
+                            <li class="burger-contact-item"><a class="contact burger-contact-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                            <li class="burger-contact-item"><a class="contact burger-contact-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        </ul>
+                    </address>
+                    <ul class="burger-social-list list">
+                        <li class="social-list-item">
+                            <a href="" class="social-list-link">
+                                <svg class="social-list-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a href="" class="social-list-link">
+                                <svg class="social-list-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a href="" class="social-list-link">
+                                <svg class="social-list-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a href="" class="social-list-link">
+                                <svg class="social-list-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <!-- HERO -->
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
                 <button class="hero-modal-btn modal-btn" type="button" data-modal-open>Order Service</button>
             </div>
-        </section>
+        </section> -->
         <!-- ADVANTAGES -->
-        <section class="advantages">
+        <!-- <section class="advantages">
             <div class="container">
                 <h2 class="advantages-headline visually-hidden">Examples of solutions</h2>
                 <ul class="advantages-list list">
@@ -83,9 +142,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- DOING -->
-        <section class="doing section">
+        <!-- <section class="doing section">
             <div class="container">
                 <h2 class="doing-title headline">What are we doing</h2>
                 <ul class="doing-list list">
@@ -94,9 +153,9 @@
                     <li class=doing-item><img src="./images/photo3.jpg" alt="laptop and phone" width="360"></li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- TEAM -->
-        <section class="team section">
+        <!-- <section class="team section">
             <div class="container">
                 <h2 class="team-title headline">Our Team</h2>
                 <ul class="team-list list">
@@ -250,9 +309,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- CUSTOMERS -->
-        <section class="customers section">
+        <!-- <section class="customers section">
             <div class="container">
                 <h2 class="customers-title headline">Customers</h2>
                 <ul class="customers-list list">
@@ -300,10 +359,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
     <!-- FOOTER -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer-container container">
             <div class="footer-main-container">
                 <a class="footer-logotype logotype link" href="./index.html">Web<span class="logotype-second-color-light">Studio</span></a>
@@ -357,9 +416,9 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- MODAL FORM -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close-btn" type="button" data-modal-close>
                 <svg class="modal-close-btn-icon" width="8" height="8">
@@ -404,7 +463,8 @@
                 <button type="submit" class="modal-form-submit modal-btn">Send</button>
             </form>
         </div>
-    </div>
-    <script src="./js/modal.js"></script>
+    </div> -->
+    <script src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
 </body>
 </html>
