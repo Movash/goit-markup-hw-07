@@ -193,7 +193,7 @@ body {
 }
 
 .mobile-menu-icon {
-    stroke: #2E2F42;
+    stroke: var(--second-text-color);
 }
 
 .mobile-menu-open {
@@ -201,8 +201,6 @@ body {
     border: none;
     padding: 0;
     line-height: 0;
-    width: 32px;
-    height: 22px;
 }
 
 /* ================= BURGER MODAL ================*/
@@ -215,8 +213,8 @@ body {
     z-index: 1000;
     top: 0;
     left: 0;
-    background-color: #F4F4FD;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    background-color: var(--white-color);
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5), 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 
     opacity: 0;
     visibility: hidden;
@@ -234,7 +232,7 @@ body {
     position: relative;
 }
 
-.modal-close-btn {
+.burger-modal-close-btn {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -250,18 +248,18 @@ body {
     transition: border-color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.burger-modal-close-btn:hover,
+.burger-modal-close-btn:focus {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
 }
 
-.modal-close-btn-icon {
+.burger-modal-close-btn-icon {
     transition: fill var(--transition-dur-and-func);
 }
 
-.modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:focus .modal-close-btn-icon {
+.burger-modal-close-btn:hover .burger-modal-close-btn-icon,
+.burger-modal-close-btn:focus .burger-modal-close-btn-icon {
     fill: var(--white-color);
 }
 
@@ -467,6 +465,7 @@ body {
     max-width: 1440px;
     background-image: var(--bg-gradient), url(../images/hero/hero-image-mb.jpg);
     background-size: cover;
+    margin: 0 auto;
 }
 
 @media (min-device-pixel-ratio: 2),
