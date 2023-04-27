@@ -207,6 +207,10 @@ body {
 
 .mobile-menu {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 35px 40px 40px;
     width: 100vw;
     height: 100vh;
     z-index: 1000;
@@ -229,16 +233,6 @@ body {
 
 .mobile-menu-close-btn {
     position: relative;
-}
-
-.mobile-menu-nav {
-    margin-top: 80px;
-    margin-bottom: 40px;
-    margin-left: 25px;
-    height: 676px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .burger-item:not(:last-child) {
@@ -302,11 +296,11 @@ body {
 @media screen and (max-width: 427px) {
 
 .burger-contact-tel {
-    font-size: 26px;
+    font-size: 25px;
 }
 
 .burger-social-list {
-    gap: 35px;
+    gap: 28px;
 }
 }
 
