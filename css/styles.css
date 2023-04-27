@@ -1155,6 +1155,14 @@ body {
     fill: var(--white-color);
 }
 
+@media screen and (max-width: 427px) {
+
+.modal {
+    width: 320px;
+    height: 624px;
+}
+}
+
 /* ================= /MODAL WINDOW ================*/
 
 /* ================= MODAL FORM ================*/
@@ -1178,6 +1186,10 @@ body {
 
 .modal-form-field:nth-child(4) {
     margin-bottom: 16px;
+}
+
+.modal-form-field-message {
+    height: 138px;
 }
 
 .modal-form-input-desc {
@@ -1267,7 +1279,9 @@ body {
 .modal-form-check-desc {
     color: #8E8F99;
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 24px;
 }
 
