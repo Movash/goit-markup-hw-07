@@ -102,7 +102,7 @@ body {
 }
 
 .modal-btn {
-    min-width: 169px;
+    /* min-width: 169px; */
     font-family: inherit;
     font-weight: var(--medium-font-weight);
     font-size: var(--smollest-font-size);
@@ -302,6 +302,10 @@ body {
 .burger-social-list {
     gap: 28px;
 }
+}
+
+.current-burger {
+    color: var(--accent-color);
 }
 
 /* ================= /BURGER MODAL ================*/
@@ -750,7 +754,7 @@ body {
 }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1200px) {
 
 .customers-item {
     flex-basis: calc((100% - 120px) / 6);
@@ -766,15 +770,14 @@ body {
 /* ====== FUNCTIONAL =====*/
 
 .functional {
-    padding-top: 96px;
-    padding-bottom: 120px;
+    padding: 48px 0;
 }
 
 .functional-buttons-list {
-    margin-bottom: 72px;
+    margin-bottom: 48px;
     display: flex;
-    justify-content: center;
-    gap: var(--main-gap);
+    flex-wrap: wrap;
+    gap: 16px var(--main-gap);
 }
 
 .functional-modal-btn {
@@ -795,6 +798,7 @@ body {
 
 .functional-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 48px var(--main-gap);
 }
@@ -852,6 +856,42 @@ body {
 
 .functional-title {
     margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    
+.functional {
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+
+.functional-buttons-list {
+    margin-bottom: 64px;
+    justify-content: center;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+.functional-list {
+    gap: 72px var(--main-gap);
+}
+
+.functional-list {
+    justify-content: flex-start;
+}
+}
+
+@media screen and (min-width: 1200px) {
+
+.functional {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.functional-buttons-list {
+    margin-bottom: 72px;
+}
 }
 
 /* ====== /FUNCTIONAL =====*/
@@ -1291,6 +1331,7 @@ body {
 }
 
 .modal-form-submit {
+    min-width: 169px;
     align-self: center;
     padding: 16px 32px;
 }
