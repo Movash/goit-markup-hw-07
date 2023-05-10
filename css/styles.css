@@ -967,7 +967,7 @@ body {
     height: 100%;
     border-radius: 50%;
     background-color: var(--light-blue-color);
-    transition: background-color var(--transition-dur-and-func)
+    transition: background-color var(--transition-dur-and-func);
 }
 
 .footer-link:hover,
